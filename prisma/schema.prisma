@@ -35,3 +35,22 @@ model UserProfile {
 
   @@map("user_profile")
 }
+
+model Produk {
+  id Int @id @default(autoincrement())
+  nama_produk String?
+  foto_produk String?
+  deskripsi_produk String?
+  harga_produk Float?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Category {
+  id Int @id @default(autoincrement())
+  deskripsi_category String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("category")
+}

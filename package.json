@@ -1,5 +1,5 @@
 {
-  "name": "1-be-green-emision",
+  "name": "1-be-senimanku",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -22,6 +22,7 @@
     "multer": "^1.4.5-lts.1",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "typescript": "^5.2.2",
     "validator": "^13.11.0"
   },
   "devDependencies": {
