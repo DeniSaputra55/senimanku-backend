@@ -6,6 +6,7 @@ import userRoute from "./routes/userRoute";
 import userProfileRoute from "./routes/userProfileRoute";
 import produkRoute from "./routes/produkRoute";
 import categoryRoute from "./routes/categoryRoute";
+import typeRoute from "./routes/typeRoute";
 
 const app: Express = express();
 const port = 3000;
@@ -28,6 +29,7 @@ app.use("/api", userRoute);
 app.use("/api", userProfileRoute);
 app.use("/api", produkRoute);
 app.use("/api", categoryRoute);
+app.use("/api", typeRoute);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);

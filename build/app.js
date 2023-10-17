@@ -10,6 +10,7 @@ const userRoute_1 = __importDefault(require("./routes/userRoute"));
 const userProfileRoute_1 = __importDefault(require("./routes/userProfileRoute"));
 const produkRoute_1 = __importDefault(require("./routes/produkRoute"));
 const categoryRoute_1 = __importDefault(require("./routes/categoryRoute"));
+const typeRoute_1 = __importDefault(require("./routes/typeRoute"));
 const app = (0, express_1.default)();
 const port = 3000;
 // middleware
@@ -25,6 +26,7 @@ app.use("/api", userRoute_1.default);
 app.use("/api", userProfileRoute_1.default);
 app.use("/api", produkRoute_1.default);
 app.use("/api", categoryRoute_1.default);
+app.use("/api", typeRoute_1.default);
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
