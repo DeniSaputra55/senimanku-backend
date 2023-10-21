@@ -1,0 +1,12 @@
+MOA Batch 9 - Meet 9 | ORM Using Prisma
+1. npm init --y
+2. npm install express dotenv
+3. npm i -D typescript @types/express @types/node
+4. npx tsc --init
+5. npm install -D concurrently nodemon
+6. npm run serve untuk menjalankan
+7. npm i -D prisma ts-node
+8. npm i @prisma/client
+9. npx prisma init
+10. setting file .env database url sesuai db
+11. npx prisma migrate dev --name init untuk migration model yang sudah dibuat

@@ -7,6 +7,8 @@ import userProfileRoute from "./routes/userProfileRoute";
 import produkRoute from "./routes/produkRoute";
 import categoryRoute from "./routes/categoryRoute";
 import typeRoute from "./routes/typeRoute";
+import assetRoute from "./routes/assetRoute";
+import lokasiRoute from "./routes/lokasiRoute";
 
 const app: Express = express();
 const port = 3000;
@@ -30,6 +32,8 @@ app.use("/api", userProfileRoute);
 app.use("/api", produkRoute);
 app.use("/api", categoryRoute);
 app.use("/api", typeRoute);
+app.use("/api", assetRoute);
+app.use("/api", lokasiRoute);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
