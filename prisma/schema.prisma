@@ -76,10 +76,76 @@ model Asset {
 }
 
 model Lokasi {
-  id Int @id @default(autoincrement())
-  alamat String?
+  id       Int      @id @default(autoincrement())
+  alamat   String?
+  daftar_pekerjaan Daftar_Pekerjaan[] // Menambahkan relasi one-to-many
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
   @@map("lokasi")
+}
+
+model Privasi_pekerjaan {
+  id Int @id @default(autoincrement())
+  jenis_pekerjaan String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("privasi_pekerjaan")
+}
+
+model Daftar_Pekerjaan {
+  id               Int      @id @default(autoincrement())
+  judul_pekerjaan  String?
+  deskripsi_pekerjaan String?
+  lokasi_pekerjaan Lokasi @relation(fields: [lokasi_pekerjaan_id], references: [id])
+  lokasi_pekerjaan_id Int
+  tanggal_posting  DateTime @default(now())
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+}
+
+model Flexibility {
+  id                    Int     @id @default(autoincrement())
+  flexibility_tipe      String?
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  @@map("flexibility")
+}
+
+model Admin {
+  id                    Int     @id @default(autoincrement())
+  email String @unique
+  password String
+  admin_profile AdminProfile?
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  @@map("admin")
+}
+
+model AdminProfile {
+  id Int @id @default(autoincrement())
+  nama String?
+  no_hp String?
+  tanggal_lahir DateTime?
+  alamat String?
+  foto_profil String?
+  admin_id Int @unique
+  admin Admin @relation(fields: [admin_id], references: [id])
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("admin_profile")
+}
+
+model Demo {
+  id                    Int     @id @default(autoincrement())
+  email                 String @unique
+  password              String
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+
+  @@map("demo")
 }

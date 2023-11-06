@@ -1,0 +1,231 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-image: url('../Assets/image/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.btn-nav {
+    display: inline-block;
+    background: transparent; /* Mengatur latar belakang tombol menjadi transparan */
+    border: 1px solid #000; /* Menambahkan border (garis tepi) agar tombol terlihat */
+    padding: 10px 20px; /* Menyesuaikan padding tombol sesuai kebutuhan */
+    color: #000; /* Mengatur warna teks tombol */
+    cursor: pointer;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.btn-nav:hover {
+    background-color: white;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.descript {
+    font-size: 20px;
+}
+
+.round-input {
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    outline: none;
+}
+
+.search-button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 20px;
+    padding-right: 45px;
+    display: flex;
+}
+
+.ul-nav {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    margin-left: 400px;
+}
+
+li {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: white;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh; 
+    margin-left: -800px;
+}
+
+.hero-title {
+    margin: 0%;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button-custom {
+    width: 150px;
+    height: 60px;
+    border-radius: 20px 10px 30px 5px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2rem;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: orange;
+    color: #fff;
+}
+
+/* Efek Hover */
+.btn:hover {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form {
+    border-radius: 2rem;
+}
+
+.card-produk {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: right;
+    justify-content: space-between;
+}
+
+.card-produk img {
+    width: 100%;
+    border-radius: 10px;
+    display: block; /* Membuat gambar berada di tengah */
+    margin: 0 auto; /* Membuat gambar berada di tengah */
+}
+
+.title-card {
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: space-between; /* Menjadikan elemen dalam "title-card" sejajar */
+    align-items: center; /* Menggunakan Flexbox untuk pemusatan vertikal */
+    margin: 10 0;
+}
+
+.title-card h1 {
+    font-size: 15px;
+    padding: 10px 0 0 0;
+}
+
+.star {
+    margin-left: 10px; /* Memberikan jarak kiri agar sejajar dengan judul */
+    color: #ffc107;
+    padding: 10px 0 0 0;
+}
+
+  /* Styling body section */
+.body-card {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+
+.location {
+    text-align: left;
+}
+
+.studio span {
+    color: gray;
+}
+
+  /* Styling button section */
+.btn-produk a {
+    background-color: #29353c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-produk a:hover {
+    background-color: #768a96;
+}
+
+.swiper-wrapper {
+    display: flex; /* Membuat elemen-elemen di dalamnya tampil secara horizontal (sejajar) */
+    flex-wrap: wrap; /* Jika jumlah elemen melebihi lebar, elemen-elemen akan pindah ke baris baru */
+    gap: 20px; /* Jarak antara elemen-elemen */
+    justify-content: center; /* Membuat elemen-elemen rata kiri */
+}
+
+.body-css {
+    margin: 0;
+    padding: 0;
+    background-image: url('\image\background1.jpg'); /* Ganti 'gambar-latar-belakang.jpg' dengan path ke gambar latar belakang Anda */
+    background-size: cover; /* Mengatur gambar agar mencakup seluruh latar belakang */
+    background-repeat: no-repeat;
+}
